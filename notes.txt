@@ -1,0 +1,25 @@
+Why Test-Driven Development?
+
+-Code is more reliable.
+-Responsility of maintain not on a single person
+-Keeps testing logic out of code itself
+-Allows projects to meet complex business requirements
+
+What is Test-Driven Development
+
+-Write test to ensure code functionality
+-Run test automatically on update
+-Write test before or at the same time as writing related code
+-Use tools to measure test coverage
+
+Introduction to Testing With Angular
+
+-Angular is a library that was designed with writing tests in mind
+-Karma is a unit test tool for Angular
+-Protractor is a special tool for end-to-end Angular tests
+
+Basically when you develop on a Test-Driven manner, you basically write
+  the test first, then you develop the code that passes the test.
+
+Test Driven Development will help you develop your code faster.
+
