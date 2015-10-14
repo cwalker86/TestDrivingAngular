@@ -1,13 +1,16 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var karma = require('karma').server;
+// Plugin that runs our server automatically
 var server = require('gulp-live-server');
 
+// Task that starts the Express Server
 gulp.task('server',function(){
   var live = new server('server.js');
   live.start();
 })
 
+// 'server' is a dependency on the 'serve' task
 gulp.task('serve',['server'],function(){
   browserSync.init({
     notify:false,
