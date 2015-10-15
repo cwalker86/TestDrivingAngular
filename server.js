@@ -1,8 +1,12 @@
 // Hook up Express.js
 var express = require('express');
+// Hook up CORS
+var cors = require('cors');
 
 // Invoke Express
 var app = express();
+// Invoke CORS
+app.use(cors());
 
 // List of Objects with names
 var contacts = [{

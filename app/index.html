@@ -4,6 +4,11 @@
 <body ng-app='AddressBook'>
 	<h1>
 		Hello, How are you today? 
-	</h1>
+  </h1>
+  <div ng-controller="ContactController">
+    <div ng-repeat='contact in contacts'>
+      {{contact.name}}
+    </div>
+  </div>
 	<script src=main.js></script>
 </body>
