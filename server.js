@@ -1,3 +1,4 @@
+// Hook up Express.js
 var express = require('express');
 
 // Invoke Express
