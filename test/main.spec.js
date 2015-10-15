@@ -45,4 +45,29 @@ describe("The Address Book App", function(){
     })
 
   })
+
+  describe("the proper filter",function(){
+    beforeEach(function(){
+      module('AddressBook')
+      inject(function($injector){
+        proper = $injector.get("$filter")("proper");
+      });
+      
+    });
+
+    it("should proper case a string",function(){
+      expect(proper("ned stark")).to.equal("Ned Stark");
+    });
+
+    it("should take a number and return that as a string",function(){
+      expect(proper(42)).to.equal("42");
+    })
+   
+    it("should throw an error on an incompatible type",function(){
+      //pass in a function closure to throw an error for undefined type
+      assert.throws(function(){
+        proper(undefined)
+      });
+    })
+  })
 })
