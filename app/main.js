@@ -2,8 +2,10 @@ angular.module("AddressBook", [])
 // add a new contact service
 // inject $http module into service
 .service("contactService", function($http){
+
   this.contacts = [];
   var contactService = this;
+
   //	$http.get("http://localhost:9001/contacts",function(res){
 		// log response from server request
     // console.log(res);
@@ -14,7 +16,7 @@ angular.module("AddressBook", [])
     // contactService.push(res.pop());
   // }
   // })
-  //
+  
   $http.get("http://localhost:9001/contacts")
   .then(function(res){
     console.log(res);

@@ -40,7 +40,7 @@ describe("The Address Book App", function(){
     })
 
     it ("should store an array of contacts in scope",function(){
-      $controller("ContactController",{$scope:$scope,contractService:contactService});
+      $controller("ContactController",{$scope:$scope,contactService:contactService});
       assert.isArray($scope.contacts);
     })
 
